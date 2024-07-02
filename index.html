@@ -1,10 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Site de Venda de Bilhetes para Concertos</title>
+    <title>Site de Venda de Bilhetes para Jogos de Futebol</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .game {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <h1>Compra de Bilhete</h1>
-    <p>O seu bilhete foi comprado com sucesso!</p>
+    <h1>Bilhetes para Jogos de Futebol</h1>
+    
+    <div class="game">
+        <h2>Juventus vs. Milan</h2>
+        <p>Data: 15 de Maio de 2022</p>
+        <p>Preço: $50</p>
+        <button onclick="comprarBilhete()">Comprar</button>
+    </div>
+
+    <div class="game">
+        <h2>Barcelona vs. Real Madrid</h2>
+        <p>Data: 20 de Maio de 2022</p>
+        <p>Preço: $60</p>
+        <button onclick="comprarBilhete()">Comprar</button>
+    </div>
+
+    <script>
+        function comprarBilhete() {
+            alert("O seu bilhete foi comprado com sucesso!");
+        }
+    </script>
 </body>
 </html>
